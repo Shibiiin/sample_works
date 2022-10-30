@@ -111,7 +111,7 @@ class _SignUpState extends State<SignUp> {
                       borderRadius: BorderRadius.circular(7.0),
                     )),
                 validator: (password) {
-                  if (password!.length < 6 || password!.isEmpty) {
+                  if (password!.length < 6 || password.isEmpty) {
                     return 'Enter a Valid Password !';
                   } else {
                     return null;
