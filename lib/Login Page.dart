@@ -148,7 +148,7 @@ style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.red),
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => SignUp()));
                 },
-                child: const Text("Dont Have Account ? Sign up"),
+                child: Text("Dont Have Account ? Sign up"),
               ),
             ),
           ],
