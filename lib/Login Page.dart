@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_assignment/Card%20Ui.dart';
 import 'package:flutter_assignment/List%20View%20with%20builder%20Ui.dart';
 import 'package:flutter_assignment/Sign%20up%20page.dart';
+import 'package:flutter_assignment/contact%20ui.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 class Login extends StatefulWidget {
@@ -21,26 +23,49 @@ class _LoginState extends State<Login> {
         key: formkey,
         child: ListView(
           children: [
-            const Padding(
-                padding: EdgeInsets.only(top: 250, left: 150, right: 75),
+
+             ListTile(
+               leading: TextButton(style:
+               TextButton.styleFrom(foregroundColor: Colors.black,
+          textStyle: const TextStyle(fontSize: 25, fontFamily: 'Raleway')
+      ),        onPressed: () {
+                 Navigator.push(context, MaterialPageRoute(builder: (context)=> CardUi()));
+               }, child: Text('Card Ui'),
+               ),
+               trailing: TextButton(
+               style: TextButton.styleFrom(foregroundColor: Colors.black,
+                 textStyle: const TextStyle(fontSize: 25, fontFamily: 'Raleway'),
+               ),
+               onPressed: (){
+      Navigator.push(context, MaterialPageRoute(builder: (context)=> ContactUi()));
+      },
+        child:const Text('Goto Movie Card'),
+
+      ),
+    ),
+              const  Padding(
+                  padding: EdgeInsets.only(top: 150, left: 160),
+                  child: Text(
+                    'Login',
+                    style: TextStyle(
+                        fontSize: 40,
+                        letterSpacing: 4,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.red),
+                  ),
+               ),
+             Padding(
+                padding: const EdgeInsets.only(right: 30, left: 50, top: 10),
                 child: Text(
-                  'Login',
+                  'Welcome back ! Login with your Credentials',
                   style: TextStyle(
-                      letterSpacing: 5,
-                      fontSize: 40,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.red),
-                )),
-            Padding(
-              padding: const EdgeInsets.only(right: 30, left: 50, top: 10),
-              child: Text(
-                'Welcome back ! Login with your Credentials',
-                style: TextStyle(
-                    fontSize: 15,
-                    color: Colors.black.withOpacity(0.70),
-                    letterSpacing: 1.2),
+                      fontSize: 15,
+                      color: Colors.black.withOpacity(0.70),
+                      letterSpacing: 1.2),
+                ),
               ),
-            ),
+
+
             const Padding(
                 padding: EdgeInsets.only(top: 45, left: 35, bottom: 10),
                 child: Text(
@@ -119,7 +144,7 @@ class _LoginState extends State<Login> {
                   final isValid = formkey.currentState!.validate();
                   if (isValid) {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => ListUi()));
+                        MaterialPageRoute(builder: (context) => CardUi()));
                   } else {
                     Fluttertoast.showToast(
                         msg: 'Invalid Username/Password',
