@@ -1,16 +1,5 @@
 # flutter_assignment
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Build a Sample Whatsapp With Bottom Navigation Bar
+![chat](https://user-images.githubusercontent.com/113658115/199812958-47b8f2d7-6379-43e8-938c-161509102bc0.jpg)
+![status phone](https://user-images.githubusercontent.com/113658115/199812972-f0bef980-fd1b-4112-82fb-1b7cb0cb6cab.jpg)
+![call](https://user-images.githubusercontent.com/113658115/199812982-c0cd5d42-fcf5-46aa-abb2-f68e80b17a0e.jpg)
