@@ -47,7 +47,7 @@ class WChat extends StatelessWidget {
                       ),
                       subtitle: Text('TYou Got a New Message '),
                       leading: CircleAvatar(
-                        backgroundImage: NetworkImage(""
+                        backgroundImage: NetworkImage(
                             "https://t4.ftcdn.net/jpg/02/14/74/61/360_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.jpg"),
                       ),
                       trailing: Text('12:20')),
