@@ -1,16 +1,6 @@
 # flutter_assignment
+# Whatsapp UI Using Bottom Navigation Bar
 
-A new Flutter project.
+![chat](https://user-images.githubusercontent.com/113658115/199812958-47b8f2d7-6379-43e8-938c-161509102bc0.jpg)
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![phone](https://user-images.githubusercontent.com/113658115/201395783-339e583c-a3d8-407f-9efb-fd7f68a77e2d.jpg)
