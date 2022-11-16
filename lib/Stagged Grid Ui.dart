@@ -1,30 +1,22 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:staggered_grid_view_flutter/widgets/staggered_grid_view.dart';
+import 'package:staggered_grid_view_flutter/widgets/staggered_tile.dart';
 
-void main(){
+void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: Stagg(),
+    home: StaggeredGrid(),
   ));
 }
 
-class Stagg extends StatefulWidget{
-  @override
-  State<StatefulWidget> createState() => _StaggState();
-
-}
-
-class _StaggState  extends State<Stagg>{
-
+class StaggeredGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-   return Scaffold(
- appBar: AppBar(
-   title: Text('Stagged Grid', style: TextStyle(fontSize: 30),),
-   centerTitle: true,
- ),
+  return Scaffold(
+    appBar: AppBar(title: const Text('Staggered Grid'),),
 
 
-   );
-  }
-}
+
+  );
+
+  }}
