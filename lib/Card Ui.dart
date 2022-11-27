@@ -20,24 +20,56 @@ class _CardUiState extends State<CardUi> {
         title: Text('Card Ui'),
         centerTitle: true,
       ),
-      body: Row(
-        children: [
-Column(
-  children: [
-    Container(
-      color: Colors.red,
-    ),
-  ],
-),
-          Row(
-            children: [
-              Container(
-                color: Colors.blue,
-              ),
-            ],
-          ),
-    ],
-      ),
+     body: Container(
+               child: Column(
+         crossAxisAlignment: CrossAxisAlignment.center,
+         children: [
+               Padding(padding: EdgeInsets.all(50),
+               child:
+               Container(
+                 height: 50,
+                 width: 100,
+                 decoration: BoxDecoration(
+                   borderRadius: BorderRadius.circular(10),
+                   color: Colors.red
+                 ),
+                 child: Row(
+                   children: [
+                     Icon(Icons.home,size: 30,),
+                  Text('Hi',style: TextStyle(fontSize: 30),),
+                 ],
+               ),
+               ),
+               ),
+           Padding(padding: EdgeInsets.all(50),
+             child:
+             Container(
+               height: 50,
+               width: 100,
+               decoration: BoxDecoration(
+                   borderRadius: BorderRadius.circular(10),
+                   color: Colors.red
+               ),
+               child: Row(
+                 children: [
+                   Icon(Icons.home,size: 30,),
+                   Text('Hi',style: TextStyle(fontSize: 30),),
+                 ],
+               ),
+             ),
+           ),
+               Padding(padding: EdgeInsets.all(15),
+               child:Row(
+                 children: [
+                   Text('Hello')
+                 ],
+               ),
+               )
+
+             ],
+               ),
+
+       ),
     );
   }
 }
