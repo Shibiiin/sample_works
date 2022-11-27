@@ -226,3 +226,6 @@ class _AnimiState extends State<Animi> {
     );
   }
 }
+
+
+

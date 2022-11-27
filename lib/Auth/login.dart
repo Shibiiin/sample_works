@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_assignment/Login%20Page.dart';
+import 'package:flutter_assignment/Auth/signup.dart';
 import 'package:flutter_assignment/e-com/BLog_page.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
@@ -18,14 +18,12 @@ class LogIn extends StatefulWidget{
 
     @override
     Widget build(BuildContext context) {
-      return Container(
+      return  Container(
+        height: 400,
+        width: 300,
         margin: const EdgeInsets.all(16.0),
         decoration: BoxDecoration(
-          image: const DecorationImage(
-              image: NetworkImage(
-                'https://media.istockphoto.com/id/1089592832/vector/studio-room-blurred-background-soft-gradient-pastel-with-lighting-well-use-as-business.jpg?s=612x612&w=0&k=20&c=nm5mtV7RsQvvcRIIcbZkhxqOwK0sVIjbIjnNVd2ORew=',
-              )
-          ),
+          color: Colors.blueGrey,
           borderRadius: BorderRadius.circular(16.0),
         ),
         child: ListView(
@@ -96,6 +94,11 @@ class LogIn extends StatefulWidget{
                 }
               },
             ),
+            TextButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=> SignupForm()));
+            }, child: Text('New User? Click here to SignUp', style: TextStyle(
+                color: Colors.black
+            ),)),
           ],
         ),
       );

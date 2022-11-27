@@ -4,9 +4,11 @@ class SignupForm extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 400,
+      width: 300,
       margin: const EdgeInsets.all(16.0),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Colors.blueGrey,
         borderRadius: BorderRadius.circular(16.0),
       ),
       child: ListView(
