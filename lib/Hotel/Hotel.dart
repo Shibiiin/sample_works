@@ -167,7 +167,7 @@ class _HotelState extends State<Hotel> {
               fontWeight: FontWeight.w700,
               fontSize: 14.0
           ),),
-    SizedBox(height: 30),
+    SizedBox(height: 25),
     BottomNavigationBar(
     backgroundColor: Colors.white,
     elevation: 0,
