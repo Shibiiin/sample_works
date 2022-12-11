@@ -13,6 +13,8 @@ class WChat extends StatelessWidget {
           child: Container(
             margin: EdgeInsets.all(5),
             child: Column(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: const [
                 Card(
                   child: ListTile(
